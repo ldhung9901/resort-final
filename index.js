@@ -5,6 +5,7 @@ var bodyParser = require("body-parser");
 var userRouter = require("./Router");
 var cookieParser = require("cookie-parser");
 var cors = require('cors');
+const path = require('path')
 
 mongoose.connect(process.env.MONGO_URL, {
   useNewUrlParser: true,
