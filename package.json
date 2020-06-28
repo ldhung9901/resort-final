@@ -4,9 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
+    "heroku-postbuild": "cd react-demo && npm install && npm run build",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon --inspect index.js",
-    "start": "node index.js"
+    "dev": "nodemon --inspect index.js"
+   
   },
   "author": "",
   "license": "ISC",
